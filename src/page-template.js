@@ -18,7 +18,7 @@ const createTeam = team => {
                 <ul class="employee-info">
                     <li class="employee-info-item">ID: ${manager.getId()}</li>
                     <li class="employee-info-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-                    <li class="employee-info-item>Office Number: ${manager.getOfficeNumber()}</li>
+                    <li class="employee-info-item">Office Number: ${manager.getOfficeNumber()}</li>
                 </ul>
             </div>
         </div>
@@ -65,30 +65,30 @@ const createTeam = team => {
     };
 
     // filter through data and push created manager into HTML array
-    html.push(team
+    htmlPage.push(team
         .filter(employee => employee.getRole() === "Manager")
         // generate manager html and passing in user input for manager info
-        .map(manager => generateManager(manager))
+        .map(manager => createManager(manager))
     );
     // filter through data and push created engineer into HTML array
-    html.push(team
+    htmlPage.push(team
         .filter(employee => employee.getRole() === "Engineer")
         // generate engineer html and passing in user input for engineer info
-        .map(engineer => generateEngineer(engineer))
+        .map(engineer => createEngineer(engineer))
         // join back together into array
         .join("")
     );
     // filter through data and push created intern into HTML array
-    html.push(team
+    htmlPage.push(team
         .filter(employee => employee.getRole() === "Intern")
         // generate intern HTML and passing in user input for intern info
-        .map(intern => generateIntern(intern))
+        .map(intern => createIntern(intern))
         // join back together into array
         .join("")
     );
     
     // return joined html array filled with all cards needed
-    return html.join("");
+    return htmlPage.join("");
 }
 
 // export whole function to generate HTML
@@ -97,6 +97,7 @@ module.exports = team => {
     return `
     <!DOCTYPE html>
     <html lang="en">
+    
 
     <head>
         <meta charset="UTF-8" />
@@ -106,13 +107,12 @@ module.exports = team => {
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        //? <script src="https://kit.fontawesome.com/c502137733.js"></script>
     </head>
 
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 jumbotron mb-3 team-heading">
+                <div class="col-12 jumbotron mb-3 team-header">
                     <h1 class="text-center">My Team</h1>
                 </div>
             </div>

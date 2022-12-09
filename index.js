@@ -19,7 +19,7 @@ function teamGenerator() {
     console.log("Please build your team: ");
     function createManager() {
         // use inquire.prompt to ask user and take user input
-        inquirer.createPromptModule([
+        inquirer.prompt([
             {
                 type: 'input',
                 name: 'managerName',
@@ -164,8 +164,13 @@ function teamGenerator() {
     }
 
     function finishTeam() {
-        fs.writeFile(distPath, template(teamMembers), 'utf-8');
-    }
+        // created directory of folder dist if it isn't already created
+        if (!fs.existsSync(distDirectory)) {
+            fs.mkdirSync(distDirectory);
+          }
+        //   write file sync will rewrite current file instead of creating new file each time ?
+          fs.writeFileSync(distPath, template(teamMembers), 'utf-8');
+        }
     // call function to create manager and start program
     createManager();
 }

@@ -1,0 +1,24 @@
+.card {
+    margin: 16px;
+    max-width: 280px;
+    min-height: 355px;
+    background-color: #007bff;
+    color: white;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.employee-info-item > a,
+.employee-info-item {
+  color: #000000;
+  text-decoration: none;
+}
+
+.team-header {
+    background-color: red;
+    color: #ffffff;
+}
+
+.card-body{
+    background-color: #f6f7f8;
+}

@@ -6,9 +6,14 @@ const Intern = require('./lib/Intern');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const path = require('path');
+const template = require('./src/page-template');
 
 // initialize an array to hold all team members
 const teamMembers = [];
+// find path and resolve directory with name 'dist'
+const distDirectory = path.resolve(__dirname, 'dist');
+// create team.html document in directory previously created 
+const distPath = path.join(distDirectory, 'team.html');
 
 function teamGenerator() {
     console.log("Please build your team: ");
@@ -159,6 +164,11 @@ function teamGenerator() {
     }
 
     function finishTeam() {
-        
+        fs.writeFile(distPath, template(teamMembers), 'utf-8');
     }
+    // call function to create manager and start program
+    createManager();
 }
+
+// call function to initially start program
+teamGenerator();

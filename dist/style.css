@@ -4,9 +4,6 @@
     min-height: 355px;
     background: linear-gradient(112.72013189013455deg, rgba(47, 128, 140,1) 4.927083333333334%,rgba(99, 36, 126,1) 97.84374999999999%);
     color: white;
-    /* display: flex; */
-    /* flex-direction: column;  */
-    /* justify-content: space-between; */
     border: none;
 }
 
@@ -38,7 +35,6 @@ body {
 }
 
 .team-header {
-    /* background-color: linear-gradient(90deg, rgba(243, 72, 104,1) 20.5625%,rgba(242, 71, 104,1) 20.5625%,rgba(158, 0, 236,1) 80.5625%); */
     background: linear-gradient(112.72013189013455deg, rgba(1, 96, 186,1) 4.927083333333334%,rgba(0, 0, 0,1) 97.84374999999999%);
     color: #ffffff;
 }

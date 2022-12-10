@@ -1,16 +1,26 @@
 .card {
     margin: 16px;
     max-width: 280px;
-    /* height: 10px; */
-    /* width: 90%; */
     min-height: 355px;
-    background-color: #007bff;
+    background: linear-gradient(112.72013189013455deg, rgba(47, 128, 140,1) 4.927083333333334%,rgba(99, 36, 126,1) 97.84374999999999%);
     color: white;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); */
+    /* display: flex; */
+    /* flex-direction: column;  */
+    /* justify-content: space-between; */
     border: none;
+}
+
+.card:hover {
+    border: 1px solid white;
+    scale:calc(1.1);
+}
+
+.card-header {
+    text-align: center;
+}
+
+body {
+    background-color: black;
 }
 
 .employee-info-item > a,
@@ -19,15 +29,17 @@
 }
 
 .employee-info-item {
-    color: black;
+    color: white;
 }
 
 .employee-info-item > a {
     color: skyblue;
+    cursor:pointer;
 }
 
 .team-header {
-    background-color: red;
+    /* background-color: linear-gradient(90deg, rgba(243, 72, 104,1) 20.5625%,rgba(242, 71, 104,1) 20.5625%,rgba(158, 0, 236,1) 80.5625%); */
+    background: linear-gradient(112.72013189013455deg, rgba(1, 96, 186,1) 4.927083333333334%,rgba(0, 0, 0,1) 97.84374999999999%);
     color: #ffffff;
 }
 
@@ -38,7 +50,7 @@
   }
 
 .card-body{
-    background-color: #f6f7f8;
+    background: linear-gradient(112.72013189013455deg, rgba(51, 69, 79,1) 4.927083333333334%,rgba(31, 41, 47,1) 97.84374999999999%);
     display: flex; 
     flex-direction: column;
     justify-content: center;

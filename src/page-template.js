@@ -38,7 +38,7 @@ const createTeam = team => {
                 <ul class="employee-info">
                     <li class="employee-info-item">ID: ${engineer.getId()}</li>
                     <li class="employee-info-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-                    <li class="employee-info-item>Github: <a href="https://github.com/${engineer.getGithub()}">${engineer.getGithub()}</a></li>
+                    <li class="employee-info-item">Github: <a href="https://github.com/${engineer.getGithub()}">${engineer.getGithub()}</a></li>
                 </ul>
             </div>
         </div>
@@ -49,7 +49,7 @@ const createTeam = team => {
     const createIntern = intern => {
         return`
         <div class="card">
-            <div class=interneader">
+            <div class=card-header>
                 <h2 class="card-title">${intern.getName()}</h2>
                 <h3 class="card-title">${intern.getRole()}</h3>
             </div>
@@ -57,7 +57,7 @@ const createTeam = team => {
                 <ul class="employee-info">
                     <li class="employee-info-item">ID: ${intern.getId()}</li>
                     <li class="employee-info-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
-                    <li class="employee-info-item>School: ${intern.getSchool()}</li>
+                    <li class="employee-info-item">School: ${intern.getSchool()}</li>
                 </ul>
             </div>
         </div>
@@ -97,7 +97,7 @@ module.exports = team => {
     return `
     <!DOCTYPE html>
     <html lang="en">
-    
+
 
     <head>
         <meta charset="UTF-8" />

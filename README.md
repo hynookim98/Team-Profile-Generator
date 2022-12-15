@@ -2,6 +2,8 @@
 
 ## Description 
 Hello my name is Matthew Kim and I am a beginner programmer studying at the UCI coding Bootcamp. This program was created to be able to create a webpage by taking in user input taking in information about the team for a project. This code runs in the terminal and will generate a HTML page for you depending on your input. 
+Here is a video showing the functionality of the program:
+https://drive.google.com/file/d/18EzlScXnJe0v05TI3VyCJqC48wh223XK/view 
 Here is a screenshot of the deployed HTML page generated through the terminal.
 ![screenshot of page](/media/screenshot.png "Screenshot of Generated HTML")
 Thank you for using my code and taking the time to try out my program.
